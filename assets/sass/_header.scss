@@ -1,0 +1,26 @@
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px 20px;
+    position: fixed;
+}
+
+// .header-left {}
+
+// .header-right {}
+
+.gnavMenu {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.gnavItem {
+    margin-left: 20px;
+
+    a {
+        color: blanchedalmond;
+        text-decoration: none;
+    }
+}
