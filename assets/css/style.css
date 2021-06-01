@@ -1,1 +1,33 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 60px 20px;
+  position: fixed;
+}
+
+.gnavMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gnavItem {
+  margin-left: 20px;
+}
+
+.gnavItem a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
