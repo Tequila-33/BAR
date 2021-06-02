@@ -23,8 +23,12 @@ body {
 .gallery img {
     width: 300px;
     height: 360px;
-
+    &.large-size {
+        padding: 305px 365px;
+    }
 }
+
+
 
 h2 {
     color: white;
