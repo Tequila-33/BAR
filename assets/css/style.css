@@ -45,4 +45,9 @@ li a {
   background-size: cover;
   background-position: 50%;
 }
+
+.gallery img {
+  width: 300px;
+  height: 360px;
+}
 /*# sourceMappingURL=style.css.map */
