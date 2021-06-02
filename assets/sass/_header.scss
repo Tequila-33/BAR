@@ -14,12 +14,12 @@ header {
 .header-right {
 
 //メニュー固定 
-ul.top-nav {
+.top-nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     margin-right: 50px;
-    background-color: #333;
+    background-color: black;
     li {
         float:left;
         margin-right: 20xp;
@@ -27,7 +27,7 @@ ul.top-nav {
         a{
             text-decoration: none;
             display: inline-block;
-            color: #f2f2f2;
+            color: cornsilk;
             text-align: center;
             padding: 14px 16px;
             transition: 0.3s;
@@ -37,7 +37,7 @@ ul.top-nav {
 }
 
 
-ul.top-nav li a:hover {background-color: #555;}
-ul.top-nav li.icon {display: none;}
+.top-nav ul li a:hover {background-color: #555;}
+.top-nav ul li.icon {display: none;}
 
 }

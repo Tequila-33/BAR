@@ -20,7 +20,7 @@ header {
   color: cornsilk;
 }
 
-.header-right ul.top-nav {
+.header-right .top-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,18 +29,18 @@ header {
           justify-content: center;
   list-style: none;
   margin-right: 50px;
-  background-color: #333;
+  background-color: black;
 }
 
-.header-right ul.top-nav li {
+.header-right .top-nav ul li {
   float: left;
   margin-right: 20xp;
 }
 
-.header-right ul.top-nav li a {
+.header-right .top-nav ul li a {
   text-decoration: none;
   display: inline-block;
-  color: #f2f2f2;
+  color: cornsilk;
   text-align: center;
   padding: 14px 16px;
   -webkit-transition: 0.3s;
@@ -48,15 +48,23 @@ header {
   font-size: 17px;
 }
 
-.header-right ul.top-nav li a:hover {
+.header-right .top-nav ul li a:hover {
   background-color: #555;
 }
 
-.header-right ul.top-nav li.icon {
+.header-right .top-nav ul li.icon {
   display: none;
 }
 
 footer {
+  color: cornsilk;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+body {
   background-color: black;
 }
 
@@ -72,5 +80,9 @@ footer {
 .gallery img {
   width: 300px;
   height: 360px;
+}
+
+h2 {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
