@@ -11,21 +11,33 @@ header {
     color: cornsilk;
 }
 
-// .header-right {}
+.header-right {
 
-ul {
+//メニュー固定 
+.top-nav ul {
     display: flex;
-    // justify-content: space-between;
+    justify-content: center;
     list-style: none;
     margin-right: 50px;
+    background-color: black;
+    li {
+        float:left;
+        margin-right: 20xp;
+
+        a{
+            text-decoration: none;
+            display: inline-block;
+            color: cornsilk;
+            text-align: center;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+    }
 }
 
-li{
-    margin-left: 20px;
 
-    a {
-        color: cornsilk;
-        text-decoration: none;
-        
-    }
+.top-nav ul li a:hover {background-color: #555;}
+.top-nav ul li.icon {display: none;}
+
 }

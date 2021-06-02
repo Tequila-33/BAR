@@ -20,21 +20,52 @@ header {
   color: cornsilk;
 }
 
-ul {
+.header-right .top-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   margin-right: 50px;
+  background-color: black;
 }
 
-li {
-  margin-left: 20px;
+.header-right .top-nav ul li {
+  float: left;
+  margin-right: 20xp;
 }
 
-li a {
-  color: cornsilk;
+.header-right .top-nav ul li a {
   text-decoration: none;
+  display: inline-block;
+  color: cornsilk;
+  text-align: center;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.header-right .top-nav ul li a:hover {
+  background-color: #555;
+}
+
+.header-right .top-nav ul li.icon {
+  display: none;
+}
+
+footer {
+  color: cornsilk;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+body {
+  background-color: black;
 }
 
 .top-page {
@@ -61,5 +92,13 @@ li a {
   width: 80vw;
   height: 80vh;
   padding-top: 20px;
+}
+
+.gallery img.large-size {
+  padding: 305px 365px;
+}
+
+h2 {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
