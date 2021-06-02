@@ -26,6 +26,7 @@ $(function(){
       let wh = $(window).height();
      
 
+
       if(photo1 <= $(window).scrollTop()+ wh){
       $("#photo1").fadeIn(5000);
       
@@ -43,3 +44,8 @@ $(function(){
     })
 
 })
+    // TOP PAGE戻るボタン用
+    $('.ToTop').on('click', function(){
+      $('body, html').animate({scrollTop:0}, 500)
+    });
+
