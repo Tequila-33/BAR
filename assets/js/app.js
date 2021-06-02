@@ -16,6 +16,30 @@ $(function(){
   //     $(this).toggleClass("large-size");
   // });
 
-    // 次のものはこの下からお願いします  
+    // 次のものはこの下からお願いします
+    //スクロールしたら横から出す  
+    $(".main img").hide();
+    $(window).on("scroll",function(){
+      let photo1 =$(".main").offset().top;
+      let photo2 =$("#photo1").offset().top;
+      let photo3 =$(".gallery").offset().top;
+      let wh = $(window).height();
+     
+
+      if(photo1 <= $(window).scrollTop()+ wh){
+      $("#photo1").fadeIn(5000);
+      
+    }
+      if(photo2 <= $(window).scrollTop()+ wh){
+      $("#photo2").fadeIn(5000);
+      
+    }
+      if(photo3 <= $(window).scrollTop()+ wh){
+      $("#photo3").fadeIn(5000);
+      
+    }
+     
+
+    })
 
 })
