@@ -39,7 +39,7 @@ $(function(){
     // Galleryの写真をフリップさせながら出現させる
     function fadeAnime(){
       // flipLeft
-      $('.gallery img').each(function(){ 
+      $('.gallery li').each(function(){ 
           var elemPos = $(this).offset().top;
           var scroll = $(window).scrollTop();
           var windowHeight = $(window).height();

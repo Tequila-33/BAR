@@ -59,7 +59,7 @@ body {
           }
         }
     }
-    
+
 .main {
     text-align: center;
 }
@@ -108,4 +108,23 @@ h3{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+
+// メディアクエリ対応
+// @mixin flexBox($content:center, $direction:row) {
+//     display: flex;
+//     flex-direction: $direction;
+//     justify-content: $content; 
+//     align-items: center;  
+// }
+
+@mixin pcOnly {
+    @media screen and (min-width: 769px){
+        @content;
+    }
+}
+@mixin spOnly {
+    @media screen and (max-width: 768px){
+        @content;
+    }
 }
