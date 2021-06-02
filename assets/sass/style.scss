@@ -3,8 +3,12 @@
     margin: 0;
     padding: 0;
 }
+//font変数
+$font-family: 'Lobster', cursive;
+
 @import "_header";
 @import "_footer";
+
 
 
 // 入力お願いします
@@ -20,12 +24,19 @@ body {
     background-size: cover;
     background-position: 50%;
 }
-.gallery img {
+.gallery {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    img {
     width: 300px;
     height: 360px;
 
     padding-top: 20px;
     padding-left: 20px;
+    }
 }
 .main {
     text-align: center;
@@ -33,20 +44,23 @@ body {
 .main img {
     width: 80vw;
     height: 80vh;
-    padding-top: 20px;
-
-   
+    padding-top: 20px; 
 }
 
-
-&.large-size {
+.large-size {
         padding: 305px 365px;
     }
 
-
-
+// .gallery imgに入れると動く
+// &.large-size {
+//         padding: 305px 365px;
+//     }
 
 h2 {
     color: white;
 }
 
+
+
+
+// もう１つ

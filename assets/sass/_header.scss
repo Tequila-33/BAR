@@ -8,10 +8,13 @@ header {
 }
 
 .header-left {
-    color: cornsilk;
+    font-size: 25px;
+    color: rgb(116, 98, 75);
+    font-family: $font-family;
 }
 
 .header-right {
+    font-family: $font-family;
 
 //メニュー固定 
 .top-nav ul {
