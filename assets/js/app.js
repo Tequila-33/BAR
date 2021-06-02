@@ -18,4 +18,8 @@ $(function(){
 
     // 次のものはこの下からお願いします  
 
+    // TOP PAGE戻るボタン用
+    $('.ToTop').on('click', function(){
+      $('body, html').animate({scrollTop:0}, 500)
+    });
 })

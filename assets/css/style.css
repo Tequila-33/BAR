@@ -70,6 +70,19 @@ footer {
   font-size: 20px;
 }
 
+#TOP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#TOP .ToTop {
+  color: cornsilk;
+}
+
 body {
   background-color: black;
 }
