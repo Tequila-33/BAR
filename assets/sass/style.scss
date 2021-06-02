@@ -26,6 +26,7 @@ body {
 }
 .gallery {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-content: flex-start;
 
@@ -36,7 +37,29 @@ body {
     padding-top: 20px;
     padding-left: 20px;
     }
-}
+
+    // Galleryの写真をフリップさせながら出現させる
+    .flipLeft{
+        animation-name: flipLeft;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+        perspective-origin: left center;
+        opacity: 0;
+        }
+        
+        @keyframes flipLeft{
+          from {
+           transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+          opacity: 0;
+          }
+        
+          to {
+          transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+          opacity: 1;
+          }
+        }
+    }
+    
 .main {
     text-align: center;
 }
@@ -45,15 +68,6 @@ body {
     height: 80vh;
     padding-top: 20px; 
 }
-
-.large-size {
-        padding: 305px 365px;
-    }
-
-// .gallery imgに入れると動く
-// &.large-size {
-//         padding: 305px 365px;
-//     }
 
 h2 {
     color: white;
@@ -65,7 +79,7 @@ h3{
   
     font-size: 30px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 .comment{
@@ -80,3 +94,18 @@ h3{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+    padding: 10px 0px;
+    color: white;
+    }
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
