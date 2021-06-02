@@ -12,9 +12,9 @@ $(function(){
       });
 
     // galleryの画像にmouseoverしたら、大きくなる
-    $(".gallery img").on("mouseover", function () {
-      $(this).toggleClass("large-size");
-  });
+  //   $(".gallery img").on("mouseover", function () {
+  //     $(this).toggleClass("large-size");
+  // });
 
     // 次のものはこの下からお願いします  
 
