@@ -25,7 +25,6 @@ body {
     background-position: 50%;
 }
 .gallery {
-    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -59,8 +58,25 @@ body {
 h2 {
     color: white;
 }
+h3{
+    a{
+        color: rgb(116, 98, 75);
+    }
+  
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.comment{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.comment h2{
+    padding-top: 20px;
+    width: 600px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-
-
-
-// もう１つ

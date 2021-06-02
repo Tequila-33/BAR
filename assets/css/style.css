@@ -97,7 +97,6 @@ body {
 }
 
 .gallery {
-  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,5 +129,33 @@ body {
 
 h2 {
   color: white;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+h3 a {
+  color: #74624b;
+}
+
+.comment {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comment h2 {
+  padding-top: 20px;
+  width: 600px;
+  font-size: 17px;
+  font-family: 'Courier New', Courier, monospace;
 }
 /*# sourceMappingURL=style.css.map */
