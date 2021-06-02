@@ -8,6 +8,9 @@
 
 
 // 入力お願いします
+body {
+    background-color: black;
+}
 
 .top-page {
     width: 100vw;
@@ -21,4 +24,8 @@
     width: 300px;
     height: 360px;
 
+}
+
+h2 {
+    color: white;
 }

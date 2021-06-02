@@ -60,6 +60,10 @@ footer {
   background-color: black;
 }
 
+body {
+  background-color: black;
+}
+
 .top-page {
   width: 100vw;
   height: 700px;
@@ -72,5 +76,9 @@ footer {
 .gallery img {
   width: 300px;
   height: 360px;
+}
+
+h2 {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
