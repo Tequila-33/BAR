@@ -17,7 +17,13 @@ header {
 }
 
 .header-left {
-  color: cornsilk;
+  font-size: 25px;
+  color: #74624b;
+  font-family: "Lobster", cursive;
+}
+
+.header-right {
+  font-family: "Lobster", cursive;
 }
 
 .header-right .top-nav ul {
@@ -94,7 +100,7 @@ body {
   padding-top: 20px;
 }
 
-.gallery img.large-size {
+.large-size {
   padding: 305px 365px;
 }
 
