@@ -1,5 +1,5 @@
 header {
-    background-color: brown;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -7,20 +7,25 @@ header {
     position: fixed;
 }
 
-// .header-left {}
+.header-left {
+    color: cornsilk;
+}
 
 // .header-right {}
 
-.gnavMenu {
+ul {
     display: flex;
     // justify-content: space-between;
+    list-style: none;
+    margin-right: 50px;
 }
 
-.gnavItem {
+li{
     margin-left: 20px;
 
     a {
-        color: blanchedalmond;
+        color: cornsilk;
         text-decoration: none;
+        
     }
 }

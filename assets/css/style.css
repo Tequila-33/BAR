@@ -4,7 +4,7 @@
 }
 
 header {
-  background-color: brown;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,24 +16,37 @@ header {
   position: fixed;
 }
 
-.gnavMenu {
+.header-left {
+  color: cornsilk;
+}
+
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
+  margin-right: 50px;
 }
 
-.gnavItem {
+li {
   margin-left: 20px;
 }
 
-.gnavItem a {
-  color: blanchedalmond;
+li a {
+  color: cornsilk;
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 header {
   background-image: url(../img/_.jpeg);
   height: 700px;
+=======
+.top-page {
+  width: 100vw;
+  height: 700px;
+  background-image: url(../img/_.jpeg);
+>>>>>>> 26c9dabc4e22e4bdff0ca9729d66cc7af5cb0690
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;

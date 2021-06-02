@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 // 入力お願いします
+=======
+>>>>>>> 26c9dabc4e22e4bdff0ca9729d66cc7af5cb0690
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@
 @import "_header";
 @import "_footer";
 
+<<<<<<< HEAD
 header{
     background-image: url(../img/_.jpeg);
     height: 700px;
@@ -14,3 +18,16 @@ header{
     background-size: cover;
     background-position: 50%;
 }
+=======
+
+// 入力お願いします
+
+.top-page {
+    width: 100vw;
+    height: 700px;
+    background-image: url(../img/_.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+>>>>>>> 26c9dabc4e22e4bdff0ca9729d66cc7af5cb0690
