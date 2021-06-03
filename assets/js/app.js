@@ -1,7 +1,6 @@
 $(function(){
 
     // headerのメニュー固定用
-    $(document).ready(function() {
         $(window).scroll(function() {
           if ($(this).scrollTop() > 0) {
             $('header').css('opacity', 0.8);
@@ -9,7 +8,6 @@ $(function(){
             $('header').css('opacity', 1);
           }
         });
-      });
 
     //スクロールしたら横から出す  
     $(".main img").hide();
