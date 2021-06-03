@@ -169,14 +169,11 @@ h2 {
 }
 
 h3 {
+  color: #74624b;
   font-size: 30px;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 20px;
-}
-
-h3 a {
-  color: #74624b;
 }
 
 .comment {
