@@ -11,12 +11,6 @@ $(function(){
         });
       });
 
-    // galleryの画像にmouseoverしたら、大きくなる
-  //   $(".gallery img").on("mouseover", function () {
-  //     $(this).toggleClass("large-size");
-  // });
-
-    // 次のものはこの下からお願いします
     //スクロールしたら横から出す  
     $(".main img").hide();
     $(window).on("scroll",function(){
@@ -40,12 +34,26 @@ $(function(){
       
     }
      
-
     })
 
-})
+    // Galleryの写真をフリップさせながら出現させる
+    function fadeAnime(){
+      // flipLeft
+      $('.gallery li').each(function(){ 
+          var elemPos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll >= elemPos - windowHeight){
+              $(this).addClass('flipLeft');
+          }else{
+              $(this).removeClass('flipLeft');
+          }
+      });
+      }
+
     // TOP PAGE戻るボタン用
     $('.ToTop').on('click', function(){
       $('body, html').animate({scrollTop:0}, 500)
     });
+})
 

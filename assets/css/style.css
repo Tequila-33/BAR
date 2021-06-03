@@ -12,7 +12,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 60px 20px;
+  padding: 10px 20px;
   position: fixed;
 }
 
@@ -100,6 +100,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-line-pack: start;
@@ -113,6 +116,44 @@ body {
   padding-left: 20px;
 }
 
+.gallery .flipLeft {
+  -webkit-animation-name: flipLeft;
+          animation-name: flipLeft;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-perspective-origin: left center;
+          perspective-origin: left center;
+  opacity: 0;
+}
+
+@-webkit-keyframes flipLeft {
+  from {
+    -webkit-transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+            transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+            transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flipLeft {
+  from {
+    -webkit-transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+            transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+            transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
 .main {
   text-align: center;
 }
@@ -123,23 +164,24 @@ body {
   padding-top: 20px;
 }
 
-.large-size {
-  padding: 305px 365px;
-}
-
 h2 {
   color: white;
 }
 
-h3 {
-  font-size: 30px;
+.store {
+  color: white;
+  width: 100vw;
+  height: 50vh;
+  margin-top: 30px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
 }
 
-h3 a {
+h3 {
   color: #74624b;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .comment {
@@ -158,5 +200,33 @@ h3 a {
   font-size: 17px;
   font-family: 'Courier New', Courier, monospace;
   color: #f2e8da;
+}
+
+.address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address p {
+  padding: 10px 0px;
+  color: white;
+}
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
